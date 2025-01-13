@@ -1,0 +1,62 @@
+.livrosDoados {
+    height: 80vh;   
+    h2 {
+        color: black;     
+        display: flex;
+        justify-content: center;
+        margin-top: 1%;
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+.listaDeLivros {
+    width: 90%;
+    height: 80%;
+    margin: 2% 5%;
+}
+.Livro1 {
+    border: solid #005695 3px;
+    border-radius: 30px;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .infoLivro {
+        height: 13vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    p {
+        color: black;
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+@media (max-width: 501px){
+    .livrosDoados {
+        h2 {
+           font-size: 25px;
+        }
+    }
+    .listaDeLivros {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10vh;
+    }
+    .Livro1 {
+        border-radius: 30px;
+        width: 60vw;
+        height: 40vh;
+        img{
+            width: 40%; 
+            height: auto;
+        }
+        p{
+            font-size: 14px; 
+        }
+    }
+}
