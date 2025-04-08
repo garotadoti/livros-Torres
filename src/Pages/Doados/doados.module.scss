@@ -1,62 +1,81 @@
 .livrosDoados {
-    height: 80vh;   
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     h2 {
-        color: black;     
-        display: flex;
-        justify-content: center;
-        margin-top: 1%;
+        color: black;
+        margin-top: 2%;
         font-size: 32px;
         font-weight: 700;
+        text-align: center;
     }
 }
+
 .listaDeLivros {
     width: 90%;
-    height: 80%;
-    margin: 2% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 3% auto;
 }
-.Livro1 {
-    border: solid #005695 3px;
+
+.livroItem {
+    border: 3px solid #005695;
     border-radius: 30px;
-    width: 20vw;
-    height: 60vh;
+    width: 250px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: 1rem;
+    background-color: #f9f9f9;
+
+    img {
+        width: 60%;
+        height: auto;
+        border-radius: 10px;
+    }
+
     .infoLivro {
-        height: 13vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-    }
-    p {
-        color: black;
-        font-size: 17px;
-        font-weight: 500;
+        text-align: center;
+        gap: 0.5rem;
+
+        p {
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
 }
-@media (max-width: 501px){
+
+@media (max-width: 501px) {
     .livrosDoados {
         h2 {
-           font-size: 25px;
+            font-size: 25px;
         }
     }
-    .listaDeLivros {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10vh;
-    }
-    .Livro1 {
-        border-radius: 30px;
-        width: 60vw;
-        height: 40vh;
-        img{
-            width: 40%; 
-            height: auto;
+
+    .livroItem {
+        width: 80vw;
+        height: auto;
+        padding: 1rem;
+
+        img {
+            width: 50%;
         }
-        p{
-            font-size: 14px; 
+
+        .infoLivro {
+            p {
+                font-size: 14px;
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ return (
     <BrowserRouter>
       <header className={S.header1}>
         <section className={S.boxLogo}>
-          <img className={S.Logo} src={logo} alt="logo do site Livro" />
+          <img className={S.Logo} src={logo} alt="logo de Livro do site" />
           <h1 className={S.titulo}>Livros Vai na Web</h1>
         </section>
         <nav className={S.boxMenu}>
